@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Agent Supply Inc.</title>
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
@@ -10,55 +10,79 @@
 
     <!-- Logo -->
     <header>
-      <img href="">
-      <span class="logo-text caps">Secret agent supply inc.</span>
+      <div class="site-heading flex">
+        <img src="./resources/images/logo.png">
+        <span class="logo-text caps">Secret agent supply inc.</span>
+      </div>
     </header>
 
     <!-- Banner -->
-    <div class="banner">
-      <div class="banner-text caps">
-        <span class="small-logo-text caps">New arrival</span>
-        <br /> <h1>Sports bikes and motorcycles</h1>
+    <div class="banner flex">
+      <div class="container">
+        <div class="banner-text caps">
+          <span class="caps" id="small-caption">New arrival</span>
+          <br /> <h1>Sports bikes and motorcycles</h1>
+        </div>
       </div>
     </div>
 
     <!-- Main nav -->
-    <nav>
-      <span class="menu-item"><a href="#">Eyewear</a></span>
-      <span class="menu-item"><a href="#">Apparel</a></span>
-      <span class="menu-item"><a href="#">Gadgets</a></span>
-      <span class="menu-item"><a href="#">Vehicles</a></span>
-      <span class="menu-item"><a href="#">Classes</a></span>
-      <span class="menu-item"><a href="#">Contact</a></span>
-    </nav>
+    <div class="main-menu">
+      <nav class="flex">
+        <span><a href="#">Eyewear</a></span>
+        <span><a href="#">Apparel</a></span>
+        <span><a href="#">Gadgets</a></span>
+        <span><a href="#">Vehicles</a></span>
+        <span><a href="#">Classes</a></span>
+        <span><a href="#">Contact</a></span>
+      </nav>
+    </div>
+
+    <div class="tablet-menu">
+      <nav class="flex">
+        <span><a href="#">Menu</a></span>
+      </nav>
+    </div>
 
     <!-- Available items -->
-    <div class="for-sale">
-      <div class="sale-item">
-        <img src="./resources/images/pen.png" />
+    <div class="for-sale flex">
+      <div class="item">
+        <div class="item-image">
+          <img src="./resources/images/pen.png" />
+        </div>
         <span class="item-caption">Exploding Pen</span>
       </div>
-      <div class="sale-item">
-        <img src="./resources/images/watch.png" />
+
+      <div class="item" id="watch">
+        <div class="item-image">
+          <img src="./resources/images/watch.png" />
+        </div>
         <span class="item-caption">Cellular Watch</span>
       </div>
-      <div class="sale-item">
-        <img src="./Resources/Images/glasses.png">
-        <span class="item-caption">Thermal Glasses</span>
+
+      <div class="item" id="glasses">
+        <div class="item-image">
+          <img src="./Resources/Images/glasses.png">
+        </div>
+        <div class="item-caption">Thermal Glasses</div>
       </div>
     </div>
 
     <!-- Location and hours -->
-    <div class="store-info">
-      <div class="store-info-block"> <h3>Location</h3> -47.346436, 84.32354</div>
-      <div class="store-info-block"> <h3>Hours</h3> 0800 - 1800
+    <div class="store-info flex">
+      <div class="store-info-block"> <h3>Location</h3>
+      <span> -47.346436, 84.32354</span>
+      </div>
+      <div class="store-info-block"> <h3>Hours</h3>
+      <span> 0800 - 1800</span>
       </div>
     </div>
 
     <!-- Footer -->
-    <footer>
-      Copyright Secret Agent Supply Inc.
-    </footer>
-
+    <div class="background">
+      <div class="footer flex">
+        Copyright Secret Agent Supply Inc.
+      </div>
+    </div>
   </body>
 </html>
