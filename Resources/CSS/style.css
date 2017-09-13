@@ -45,7 +45,7 @@ header img{
 .banner{
   max-width: 100%;
   max-height: 25rem;
-  background-image: url('../images/moto.jpeg');
+  background-image: url('../Images/moto.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -193,7 +193,7 @@ nav a:hover{
   .site-heading{
     margin: 0;
   }
-  
+
   .item{
     width: 47%;
   }
@@ -202,17 +202,53 @@ nav a:hover{
     display: none;
   }
 
-  .tablet-menu{
-    display: flex;
-  }
-
-  .main-menu{
-    display: none;
-  }
-
   .container{
     margin: 0;
   }
+
+
+  /* Dropdown tablet menu */
+    .tablet-menu{
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      background: firebrick;
+      text-align: center;
+      padding: 0.75rem 0;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dropdown-content{
+      display: none;
+      z-index: 1;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      text-decoration: none;
+      position: absolute;
+      width: 100%;
+    }
+
+    .dropdown-content a{
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      background: white;
+      color: firebrick;
+    }
+
+    .dropdown-content a:hover{
+      background: firebrick;
+      color: white;
+    }
+
+    .tablet-menu:hover .dropdown-content{
+      display: block;
+    }
+
+    .main-menu{
+      display: none;
+    }
 
 }
 
